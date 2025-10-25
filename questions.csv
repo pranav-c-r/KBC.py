@@ -1,0 +1,33 @@
+id,category,question,a,b,c,d,answer
+H1,hard,Which river flows through the city of Paris?,Thames,Seine,Danube,Rhine,b
+H2,hard,Which planet has the longest day duration?,Mercury,Venus,Mars,Jupiter,b
+H3,hard,Which Shakespeare play features the characters Rosencrantz and Guildenstern?,Macbeth,Hamlet,King Lear,Othello,b
+H4,hard,What is heavy water used in nuclear reactors?,H2O2,D2O,HOH,H2SO4,b
+H5,hard,Which continent has the most countries?,Asia,Africa,Europe,South America,b
+H6,hard,Which big cat has the scientific name Panthera tigris?,Leopard,Lion,Tiger,Jaguar,c
+H7,hard,At what temperature does water boil at high altitude compared to sea level?,Higher,Lower,Same,Varies Randomly,b
+H8,hard,Which two colors make purple?,Red and Blue,Red and Green,Blue and Yellow,Yellow and Red,a
+H9,hard,What part of the piano produces sound?,Keys,Pedals,Strings,Hammers,c
+H10,hard,Which gas do humans exhale most during respiration?,Oxygen,Nitrogen,Carbon Dioxide,Hydrogen,c
+
+M1,harder,Who was the last British Viceroy of India?,Lord Mountbatten,Lord Curzon,Lord Wavell,Lord Linlithgow,a
+M2,harder,Charles Babbage designed which early mechanical computer?,Colossus,Difference Engine,Analytical Engine,ENIAC,c
+M3,harder,Which element has the highest electronegativity?,Oxygen,Chlorine,Fluorine,Nitrogen,c
+M4,harder,The Mariana Trench is located in which ocean?,Atlantic,Indian,Pacific,Arctic,c
+M5,harder,What is the official language of Mozambique?,Spanish,Portuguese,Swahili,French,b
+M6,harder,Where is the original Mona Lisa displayed?,Louvre Museum,Prado Museum,Vatican Museums,The Met,a
+M7,harder,Which chamber of the human heart pumps oxygenated blood?,Left Atrium,Right Atrium,Right Ventricle,Left Ventricle,d
+M8,harder,What is 15 squared minus 12 squared?,81,69,63,51,a
+M9,harder,Which landmark is nicknamed 'The Statue of Liberty’s Little Sister'?,Statue of Unity,Christ the Redeemer,Replica in Paris,Eiffel Tower,c
+M10,harder,Which metal’s symbol comes from its Latin name 'Hydrargyrum'?,Silver,Mercury,Lead,Copper,b
+
+E1,hardest,Pi is an example of which type of number?,Rational,Transcendental,Imaginary,Whole,b
+E2,hardest,Penicillin was accidentally discovered from which mold species?,Aspergillus,Penicillium chrysogenum,Rhizopus,Mucor,b
+E3,hardest,In which year did Rabindranath Tagore win the Nobel Prize?,1901,1913,1920,1931,b
+E4,hardest,Which of the following is a twin prime pair?,(2,3),(3,5),(9,11),(11,14),b
+E5,hardest,Which city was Australia’s capital before Canberra?,Sydney,Melbourne,Perth,Adelaide,b
+E6,hardest,In a CPU, what does the Control Unit do?,Performs calculations,Stores data,Directs operations,Manages I/O ports,c
+E7,hardest,Which planet has the fastest rotation period?,Earth,Jupiter,Saturn,Mars,b
+E8,hardest,Which country hosted the Olympics immediately before London 2012?,Beijing,Athens,Rio de Janeiro,Sydney,a
+E9,hardest,What is the molar mass of sodium chloride (NaCl)?,48.5 g/mol,58.5 g/mol,60.5 g/mol,75.5 g/mol,b
+E10,hardest,Einstein received the Nobel Prize for which discovery?,Theory of Relativity,Photoelectric Effect,Brownian Motion,E=mc²,b
