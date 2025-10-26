@@ -6,6 +6,7 @@ Demonstrates : Modularization.
 """
 import csv
 import random
+import os
 from datetime import datetime
 from typing import List
 
@@ -61,7 +62,7 @@ class KBCGame:
             if q.category in cat_map:
                 cat_map[q.category].append(q)
         required={'hard':3, 'harder':3, 'hardest':4}
-        for cat,req in required_items():
+        for cat,req in required.items():
             if len(cat_map[cat])<req:
                 raise ValueError(f"Not enough {cat} questions (need {req}).")
             
@@ -115,20 +116,27 @@ class KBCGame:
         except Exception as e:
             print(f"Error saving score: {e}")
             
-    def load_questions_from_csv(csv_filename='questions.csv')->List[Question]:
-        """Load questions from CSV (id,category,question,a,b,c,d,answer)."""
-        questions:List[Question]=[]
-        try:
-            with open(csv_filename,'r',encoding='utf-8') as f:
-                for row in csv.DictReader(f):
-                    try:
-                        q=Question(
-                            row['id'],row['category'],row['question'],
-                            [row['a'],row['b'],row['c'],row['d']],row['answer']
-                        )
-                        questions.append(q)
-                    except Exception:
-                        continue
-        except FileNotFoundError:
-            print(f"File {csv_filename} not found.")
-        return questions
+def load_questions_from_csv(csv_filename: str = 'questions.csv') -> List[Question]:
+    """Load questions from CSV (id,category,question,a,b,c,d,answer).
+
+    Expected CSV header: id,category,question,a,b,c,d,answer
+    Returns a list of Question objects. Skips malformed rows.
+    """
+    questions: List[Question] = []
+    try:
+        with open(csv_filename, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                try:
+                    q = Question(
+                        row['id'], row['category'], row['question'],
+                        [row['a'], row['b'], row['c'], row['d']], row['answer']
+                    )
+                    questions.append(q)
+                except Exception:
+                    # skip malformed row
+                    continue
+    except FileNotFoundError:
+        print(f"File {csv_filename} not found.")
+    return questions
+
